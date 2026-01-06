@@ -769,7 +769,7 @@
     </div>
     <div
       id="contact"
-      class="container hidden relative shadow-2xl bg-cover bg-center bg-no-repeat flex flex-col w-[300px] h-[200px] md:w-[720px] lg:w-[1000px] md:h-[380px] lg:h-[400px] mx-auto mt-10 border-2 border-amber-900 overflow-y-scroll isiabout"
+      class="container hidden relative shadow-2xl bg-cover bg-center bg-no-repeat flex flex-col w-[300px] h-[200px] md:w-[720px] lg:w-[1000px] md:h-[380px] lg:h-[400px] mx-auto mt-10 border-2 border-amber-900 overflow-y-scroll lg:overflow-hidden isiabout"
     >
       <div class="absolute bottom-0 left-0 hover-wiggle">
         <img src="img/bungak.png" class="h-[90px]" />
@@ -800,9 +800,10 @@
             />
           </div>
 
-          <form id="formkontak"
-            action="https://formsubmit.co/naylameyliarafika@gmail.com"
+          <form
             method="POST"
+            id="formkontak"
+            action="https://formsubmit.co/naylameyliarafika@gmail.com"
             class="flex flex-col w-full max-w-[600px] items-center lg:items-end"
           >
             <input type="hidden" name="_captcha" value="false" />
