@@ -16,3 +16,13 @@ links.forEach((link) => {
     document.getElementById(target).classList.remove("hidden");
   });
 });
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbz4-8XKotzqX61x5fGT7oP3YeFTXxINQH8iygmteV_hKHGI6qXYpdn15e-fLb95YuEY/exec";
+const form = document.forms["message"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+});

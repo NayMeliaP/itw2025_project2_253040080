@@ -769,7 +769,7 @@
     </div>
     <div
       id="contact"
-      class="container hidden relative shadow-2xl bg-cover bg-center bg-no-repeat flex flex-col w-[300px] h-[200px] md:w-[720px] lg:w-[1000px] md:h-[380px] lg:h-[400px] mx-auto mt-10 border-2 border-amber-900 overflow-y-scroll lg:overflow-hidden isiabout"
+      class="container hidden relative shadow-2xl bg-cover bg-center bg-no-repeat flex flex-col w-[300px] h-[200px] md:w-[720px] lg:w-[1000px] md:h-[380px] lg:h-[400px] mx-auto mt-10 border-2 border-amber-900 overflow-y-scroll isiabout"
     >
       <div class="absolute bottom-0 left-0 hover-wiggle">
         <img src="img/bungak.png" class="h-[90px]" />
@@ -801,41 +801,32 @@
           </div>
 
           <form
-            method="POST"
-            id="formkontak"
-            action="https://formsubmit.co/naylameyliarafika@gmail.com"
+            name="message"
             class="flex flex-col w-full max-w-[600px] items-center lg:items-end"
           >
-            <input type="hidden" name="_captcha" value="false" />
-
-            <input type="hidden" name="_next" value="thankyou.html" />
-
             <input
               type="text"
-              name="name"
-              required
+              name="nama"
               placeholder="your name ♡"
-              class="w-[250px] h-[30px] bg-[#fffaf5]/50 md:w-[600px] rounded-md font-cormorant my-2 px-4 py-2 border-2 border-amber-800 focus:border-amber-800 focus:outline-none focus:ring-0"
+              class="w-[250px] h-[30px] md:w-[600px] lg:w-[600px] font-cormorant my-2 px-4 py-2 bg-[#fffaf5]/50 border border-amber-800 text-amber-900 placeholder:text-amber-700 shadow-sm rounded-xl focus:outline-none focus:ring-1 focus:ring-amber-800"
             />
 
             <input
               type="email"
               name="email"
-              required
               placeholder="your email ♡"
-              class="w-[250px] h-[30px] rounded-md bg-[#fffaf5]/50 md:w-[600px] font-cormorant my-2 px-4 py-2 border-2 border-amber-800 focus:border-amber-800 focus:outline-none focus:ring-0"
+              class="w-[250px] h-[30px] md:w-[600px] lg:w-[600px] font-cormorant my-2 px-4 py-2 bg-[#fffaf5]/50 border border-amber-800 text-amber-900 placeholder:text-amber-700 shadow-sm rounded-xl focus:outline-none focus:ring-1 focus:ring-amber-800"
             />
 
             <textarea
-              name="message"
-              required
+            name="pesan"
               placeholder="your message ♡"
-              class="w-[250px] md:w-[600px] bg-[#fffaf5]/50 rounded-md font-cormorant my-2 px-4 py-3 h-20 border-2 border-amber-800 focus:border-amber-800 focus:outline-none focus:ring-0"
+              class="w-[250px] md:w-[600px] lg:w-[600px] font-cormorant my-2 px-4 py-3 h-20 bg-[#fffaf5]/50 border border-amber-800 text-amber-900 placeholder:text-amber-700 shadow-sm rounded-xl resize-none focus:outline-none focus:ring-1 focus:ring-amber-800"
             ></textarea>
 
             <button
               type="submit"
-              class="w-[200px] font-cormorant mt-3 mb-2 py-2 rounded-xl bg-[#8b5a2b]/50 text-white"
+              class="w-[200px] mt-3 mb-2 py-2 rounded-xl bg-[#8b5a2b]/50 text-white font-cormorant text-sm md:text-lg shadow-md hover:bg-[#6f431e]/50 transition self-center lg:self-end"
             >
               send message!
             </button>
