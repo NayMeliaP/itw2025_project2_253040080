@@ -10,12 +10,15 @@ body {
 
 .isiabout::-webkit-scrollbar {
   width: 12px;
+  background-color: rgb(218, 184, 141);
 }
 
 .isiabout::-webkit-scrollbar-thumb {
   background-color: #8b5a2b;
+  width: 0.1px;
+  height: 0.01px;
   border-radius: 999px;
-  border: 3px solid #f6eadf;
+  border: 2px solid #f6eadf;
 }
 
 .isiabout::-webkit-scrollbar-thumb:hover {
@@ -61,3 +64,4 @@ body {
 .font-cormorant {
   font-family: "Cormorant", serif;
 }
+
