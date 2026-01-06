@@ -18,7 +18,7 @@ links.forEach((link) => {
 });
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbymQnVDTO7N3W4AryTfgfKrT_l-kb5lCewoh70vQUg/dev";
+  "https://script.google.com/macros/s/AKfycbymQnVDTO7N3W4AryTfgfKrT_l-kb5lCewoh70vQUg/exec";
 const form = document.forms["message"];
 
 form.addEventListener("submit", (e) => {
