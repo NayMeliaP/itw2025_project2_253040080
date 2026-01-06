@@ -17,7 +17,8 @@ links.forEach((link) => {
   });
 });
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbz4-8XKotzqX61x5fGT7oP3YeFTXxINQH8iygmteV_hKHGI6qXYpdn15e-fLb95YuEY/exec";
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbymQnVDTO7N3W4AryTfgfKrT_l-kb5lCewoh70vQUg/dev";
 const form = document.forms["message"];
 
 form.addEventListener("submit", (e) => {
